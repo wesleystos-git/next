@@ -1,0 +1,34 @@
+/*Seletores de cores*/
+.blue{
+    background-color: blue;
+}
+.red{
+    background-color:red;
+}
+.yellow{
+    background-color: yellow;
+}
+.puerple{
+    background-color: blueviolet;
+}
+.green{
+    background-color: yellowgreen;
+}
+.black{
+    background-color: black;
+}
+.indigo{
+    background-color: indigo;
+}
+.orange{
+    background-color: #FF5200;
+}
+.pink{
+    background-color: #FFC0CB;
+}
+.cinza{
+    margin: 4px;
+    padding: 4px;
+    background-color: #e2e2e2;
+    border-radius: 5px;
+}

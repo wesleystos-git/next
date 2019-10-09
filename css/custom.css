@@ -1,0 +1,441 @@
+@font-face {
+    font-family: 'Novecento';
+    /*a name to be used later*/
+    src: url('../assets/fonts/Novecentowide-Bold.otf');
+    /*URL to font*/
+}
+
+@font-face {
+    font-family: 'Museo Sans';
+    /*a name to be used later*/
+    src: url('../assets/fonts/museo-sans-500.otf');
+    /*URL to font*/
+}
+
+@font-face {
+    font-family: 'PlexesBold';
+    /*a name to be used later*/
+    src: url('../assets/fonts/PlexesBlackPro.otf');
+    /*URL to font*/
+}
+
+@font-face {
+    font-family: 'PlexesLight';
+    /*a name to be used later*/
+    src: url('../assets/fonts/PlexesLightPro.otf');
+    /*URL to font*/
+}
+
+p {
+    margin-bottom: 0em !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+span,
+button {
+    font-family: 'PlexesLight' !important;
+    font-weight: 900;
+}
+
+a {
+    text-decoration: none !important;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+a:hover {
+    color: #fff
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: 'Museo Sans' !important;
+}
+
+#slider {
+    height: 100vh;
+}
+
+.gradient {
+    height: 100vh;
+    z-index: -1;
+}
+
+.image {
+    height: 100vh;
+    z-index: 1;
+}
+
+.txt-vertical {
+    height: 100vh;
+    width: 10%;
+    margin-right: 30px;
+    margin-left: 300px;
+    text-align: center;
+}
+
+.img-text-v {
+    height: 50%;
+    margin-top: 200px;
+    margin-left: 130px
+}
+
+.bg-logo img {
+    height: 100px;
+    padding: 0.9em;
+    font-family: 'PlexesLight' !important;
+}
+
+.logo-mobile {
+    height: 35px;
+    margin-left: 5px;
+}
+
+.menu-content {
+    max-width: 1123px;
+    height: 100px;
+    float: right;
+    margin-right: 40px;
+}
+
+.bg-menu {
+    display: block;
+    background-color: #fff;
+    border: #fff 1px solid;
+    border-radius: 6px;
+    padding: 5px;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    z-index: 50;
+}
+
+.head {
+    margin-top: 80px;
+    height: 86vh;
+}
+
+.slider img {
+    position: absolute;
+    left: -813px;
+    height: 649px;
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+}
+
+.overflow {
+    overflow: hidden;
+}
+
+#dvCentro {
+    width: 100%;
+    border: 1px solid #000;
+}
+
+#dvConteudo {
+    background-color: #000;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    position: absolute;
+    opacity: .5;
+    -moz-opacity: 0.50;
+    filter: alpha(opacity=50);
+}
+
+.menu-x {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    opacity: none !important;
+}
+
+.menu-list {
+    font-size: 56px;
+    text-transform: uppercase;
+    background-color: #557cf2;
+    opacity: none !important;
+}
+
+.btn {
+    height: 50px;
+    line-height: 50px;
+    width: 100px;
+}
+
+.btn:hover {
+    color: none;
+}
+
+.btn:active {
+    position: relative;
+    top: 1px;
+}
+
+.space-title {
+    height: 100px;
+}
+
+
+/*inputs*/
+
+.label-float {
+    position: relative;
+    padding-top: 13px;
+    color: #ccc !important;
+}
+
+.label-float input {
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    outline: none;
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 16px;
+    transition: all .1s linear;
+    -webkit-transition: all .1s linear;
+    -moz-transition: all .1s linear;
+    -webkit-appearance: none;
+}
+
+.label-float input:focus {
+    border: 2px solid #557cf2;
+}
+
+.label-float input:link {
+    border: 2px solid #cf2;
+}
+
+.label-float input::placeholder {
+    color: transparent;
+}
+
+.label-float label {
+    pointer-events: none;
+    position: absolute;
+    top: calc(50% - 8px);
+    left: 15px;
+    transition: all .1s linear;
+    -webkit-transition: all .1s linear;
+    -moz-transition: all .1s linear;
+    background-color: white;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.label-float input:required:invalid+label {
+    color: red;
+}
+
+.label-float input:focus:required:invalid {
+    border: 2px solid red;
+}
+
+.label-float input:required:invalid+label:before {
+    content: '*';
+}
+
+.label-float input:focus+label,
+.label-float input:not(:placeholder-shown)+label {
+    font-size: 14px;
+    top: 0;
+    color: #557cf2;
+}
+
+
+/*inputs*/
+
+
+/*inputs*/
+
+.textarea-float {
+    position: relative;
+    padding-top: 13px;
+    color: #ccc !important;
+}
+
+.textarea-float textarea {
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    outline: none;
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 16px;
+    transition: all .1s linear;
+    -webkit-transition: all .1s linear;
+    -moz-transition: all .1s linear;
+    -webkit-appearance: none;
+}
+
+.textarea-float textarea:focus {
+    border: 2px solid #557cf2;
+}
+
+.textarea-float textarea::placeholder {
+    color: transparent;
+}
+
+.textarea-float label {
+    pointer-events: none;
+    position: absolute;
+    top: calc(50% - 8px);
+    left: 15px;
+    transition: all .1s linear;
+    -webkit-transition: all .1s linear;
+    -moz-transition: all .1s linear;
+    background-color: white;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.textarea-float textarea:required:invalid+label {
+    color: red;
+}
+
+.textarea-float textarea:focus:required:invalid {
+    border: 2px solid red;
+}
+
+.textarea-float input:required:invalid+label:before {
+    content: '*';
+}
+
+.textarea-float textarea:focus+label,
+.textarea-float textarea:not(:placeholder-shown)+label {
+    font-size: 14px;
+    top: 0;
+    color: #557cf2;
+}
+
+
+/*inputs*/
+
+.center {
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 85%;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.icons-franquias {
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 85%;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.padding {
+    padding: 20px;
+}
+
+.margin {
+    margin: 4px;
+}
+
+.timeline-container {
+    background-color: #000;
+    max-width: 0.13rem !important;
+}
+
+.timeline-cicle {
+    background-color: #fff;
+    border: #557cf2 2px solid;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+}
+
+.timeline-bg {
+    background-image: url('../assets/image/bg_line.png');
+    background-position: 15px;
+    background-repeat: repeat-y;
+}
+
+.icon-down {
+    height: 80px;
+}
+
+.icon {
+    height: 100px;
+    padding-right: 20px;
+}
+
+@media all and (max-width: 400px) {
+    .woman {
+        display: none;
+    }
+    .icon-down-M {
+        display: none;
+    }
+    .slider {
+        display: none;
+    }
+    .img-text-v {
+        display: none;
+    }
+    .icon {
+        height: 50px;
+    }
+    /* estrutura mobile*/
+    .logo-400 {
+        height: 40px;
+    }
+    .menu {
+        font-size: 26px;
+        text-transform: uppercase;
+    }
+    #home400 {
+        background-image: url('../assets/image/bg-mobile.png');
+        height: 100%;
+    }
+    #quemsomos400 {
+        height: 100%;
+    }
+    #servicos400 {
+        height: 100%;
+    }
+    #franquia400 {
+         height: 100%;
+    }
+    #contato400 {
+        height: 100%;
+    }
+    .margin{
+        padding-top: 5%;
+        padding-right: 5%;
+        padding-left:5%;
+        padding-bottom: 5%;
+    }
+    .m-externo{
+        width: 97%;
+        margin: 5px;
+        text-transform: 
+    }
+    .destaque{
+        height: 500px;
+        overflow: hidden;
+        position: absolute;
+              z-index: 10;
+        left: 25px;
+        background-color: aquamarine;
+    }
+}

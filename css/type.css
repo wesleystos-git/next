@@ -1,0 +1,29 @@
+.t {
+    max-width: 800px;
+    font-size: 55px;
+    text-align: center;
+    margin: 60px auto;
+    font-family: 'Novecento' !important;
+    color: #393a46;
+    line-height: 75px;
+    text-transform: uppercase;
+  }
+
+  .t::after {
+    content: '|';
+    opacity: 1;
+    margin-left: 5px;
+    display: inline-block;
+    animation: blink .8s infinite;
+    font-family: 'PlexesLight' !important;
+  }
+  
+
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }

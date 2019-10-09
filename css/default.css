@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'Novecento'; /*a name to be used later*/
+    src: url('../Asset/fonts/Novecentowide-Bold.otf'); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'PlexesBold'; /*a name to be used later*/
+    src: url('../Asset/fonts/PlexesBlackPro.otf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'PlexesLight'; /*a name to be used later*/
+    src: url('../Assets/fonts/PlexesLightPro.otf'); /*URL to font*/
+}
+p {
+    margin-bottom: 0em !important;
+}
+h1,
+h2,
+h3,
+h4,
+p,
+span,
+button {
+    font-family: 'PlexesLight' !important;
+    font-weight: 900;
+}
+a { text-decoration: none !important;
+    cursor: pointer;
+    opacity:0.9;
+}
+a:hover{ color: #fff }
+
+  ul{list-style: none;}
+
+body {
+    font-family: 'PlexesLight' !important;
+}
+#slider{
+    height: 100vh;
+}
+.bg-1{
+    background-image: url("../assets/image/bg_left.png") !important;
+    background-position: left 0px;
+    background-repeat: no-repeat;
+    z-index: 1;  
+}
+.bg-2{
+    background-image: url("../assets/image/bg_right.png");
+    background-position: right 0px bottom 900px;
+    background-repeat: no-repeat;
+    z-index: 0;  
+}
+#sobre{
+    height:100%;
+}
+#servicos{
+    height: 100%;
+}
+#franquia{
+    height: 100%;
+}
+.bg-3{
+    background-size: 50%;
+}
+#contato{
+    background-image:  url('../assets/image/bg-line.png');
+    background-size: 100%;
+    height: 80%;
+}
